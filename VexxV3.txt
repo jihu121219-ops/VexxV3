@@ -10135,7 +10135,7 @@ do
         if opt.no_postfx then applyPost(inst, true) end;
     end));
 
-    getgenv().elisium_apply_opt = function(kind)
+    getgenv().VexxV3_apply_opt = function(kind)
         if kind == "particles" or kind == "textures" then scanWorkspace();
         elseif kind == "postfx" then scanLighting();
         elseif kind == "shadows" then applyShadows();
